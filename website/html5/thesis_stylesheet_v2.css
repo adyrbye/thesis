@@ -1,0 +1,228 @@
+/* 
+This is the stylesheet modified for the version of the fictional project's website integrating HTML5 elements. It also includes some select CSS3 styles. Sizes have also been adjusted from px to em, ex and percentage where appropriate.
+
+Font courtesy of the Google Font Library (URL: http://www.google.com/webfonts) */
+
+article, body, footer, header, nav, h1, h2, h3, h4, h5, h6, small, img, p, select {
+	/* This resets all the listed HTML elements to ensure consistent styling. Table and list elements have been deliberately excepted as resetting causes all cells to collapse into a single column and removes bullet points. The final line here prevents Safari from applying text resizing. */
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display: block;
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	background: #9B7E71;
+	font-family: 'Noticia Text', serif;
+	font-size: 16px;
+	text-align: left;
+	max-width: 1000px;
+}
+
+#banner {
+	background-image:url(../Pictures/thesis_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 300px;
+	width: 1000px;
+	/* The following adds a shadow to box elements. */
+	-webkit-box-shadow: .2ex 0ex .4ex black; /* Safari 3-4 */
+	-moz-box-shadow: .2ex 0ex .4ex black; /* Firefox 1+ */
+	box-shadow: .2ex 0ex .4ex black; /* Opera 10.5, IE 9, Safari 5, Chrome */
+}
+
+header {
+	background-color: #780904;
+	clear: both;
+	margin: 0;
+	width: 1000px;
+	/* The following rounds corners on box elements */
+	-webkit-border-bottom-left-radius: 1em; /* Safari 3-4 */
+	-webkit-border-bottom-right-radius: 1em; /* Safari 3-4 */
+	-moz-border-bottom-left-radius: 12em; /* Firefox 1+ */
+	-moz-border-bottom-right-radius: 1em; /* Firefox 1+ */
+	border-bottom-left-radius: 1em; /* Opera 10.5, IE 9, Safari 5, Chrome */
+	border-bottom-right-radius: 1em; /* Opera 10.5, IE 9, Safari 5, Chrome */
+	/* The following adds a shadow to box elements. */
+	-webkit-box-shadow: .2ex .2ex .4ex black; /* Safari 3-4 */
+	-moz-box-shadow: .2ex .2ex .4ex black; /* Firefox 1+ */
+	box-shadow: .2ex .2ex .4ex black; /* Opera 10.5, IE 9, Safari 5, Chrome */
+}
+
+h1 {
+	color: #99919E;
+	font-weight: bold;
+	font-size: 1.55em;
+	margin: 0 .5ex 0 .5ex;
+	padding: 1ex;
+	/* The following adds a shadow to text. The numbers correspond to horizontal/vertical/blur radius/color */
+	-webkit-text-shadow: .2ex .2ex .4ex black; /* Safari 3-4 */
+	-moz-text-shadow: .2ex .2ex .4ex black; /* Firefox 1+ */
+	text-shadow: .2ex .2ex .4ex black; /* Opera 10.5, IE 9, Safari 5, Chrome */
+}
+
+nav {
+/* Height must be adjusted if the sidebar links change */
+	background-color: #780904;	
+	float: left;
+	height: 22em;
+	margin: 1em 0 1em 0;
+	width: 12.6em;
+	/* The following rounds corners on box elements */
+	-webkit-border-radius: 1em; /* Safari 3-4 */
+	-moz-border-radius: 1em; /* Firefox 1+ */
+	border-radius: 1em; /* Opera 10.5, IE 9, Safari 5, Chrome */
+	/* The following adds a shadow to box elements. */
+	-webkit-box-shadow: 0 .2ex .4ex black; /* Safari 3-4 */
+	-moz-box-shadow: 0 .2ex .4ex black; /* Firefox 1+ */
+	box-shadow: 0 .2ex .4ex black; /* Opera 10.5, IE 9, Safari 5, Chrome */
+}
+
+h6 {
+	font-weight: bold;
+	font-size: 2.25ex;
+	margin: 0;
+	padding: .5ex 1.25ex .5ex 1.25ex;
+	/* see h1 for more on the shadow style */
+	-webkit-text-shadow: .2ex .2ex .4ex black;  /* Safari 3-4 */
+	-moz-text-shadow: .2ex .2ex .4ex black; /* Firefox 1+ */
+	text-shadow: .2ex .2ex .4ex black; /* Opera 10.5, IE 9, Safari 5, Chrome */
+}
+
+h6.indent {
+	font-weight: bold;
+	font-size: 2.25ex;
+	margin: 0;
+	padding: .5ex 1.25ex .5ex 2.5ex;
+	/* see h1 for more on the shadow style */
+	-webkit-text-shadow: .2ex .2ex .4ex black;  /* Safari 3-4 */
+	-moz-text-shadow: .2ex .2ex .4ex black; /* Firefox 1+ */
+	text-shadow: .2ex .2ex .4ex black; /* Opera 10.5, IE 9, Safari 5, Chrome */
+}
+
+a:active {
+	color: #99919E;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #99919E;
+	text-decoration: overline underline; 
+}
+
+a:link {
+	color: #99919E;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #9B7E71;
+	text-decoration: none;
+}
+
+article {
+	margin: 0;
+	padding: 1em 0 0 13em;
+}
+
+h2 {
+	color: #780904;
+	font-weight: bold;
+	font-size: 2.5ex;
+	margin: 0;
+	padding: 1ex 0 .5ex 1.25ex;
+}
+
+p {
+	margin: 0;
+	padding: 0 0 1em 1em;
+	width: 95%;
+}
+
+h3 {
+	color: #780904;
+	font-weight: bold;
+	font-size: 2.25ex;
+	margin: 0;
+	padding: 1ex 0 .5ex 1.5ex;
+}
+
+td {
+	border: 1px solid #000;
+	padding: 2pt;
+	width: 12em;
+}
+
+ul {
+	margin: 0 0 0 3em;
+	padding: 0;
+	width: 65%;
+}
+
+select {
+	margin: 2em;
+	padding: 0.5ex;
+}
+
+textarea {
+	margin: 0 0 0 2em;
+}
+
+input {
+	margin: 0 0 1ex 2em;
+}
+
+input.check {
+	margin: 0 .5em 0 2em;
+	width: 1.5em;
+	height: 1.5em;
+}
+
+input.radio {
+	margin: 0 .5em 0 2em;
+	width: 1.5em;
+	height: 1.5em;
+}
+
+table {
+	background-color: #99919E;
+	border: 2px solid #000;
+	margin: 1.75em;
+}
+
+img.feature {
+	margin: 0;
+	padding: 1em 10% 1em 10%;
+}
+
+img.in_table {
+	display: block;
+	margin: 1% auto 1% auto;
+}
+
+footer {
+	background-color: #780904;
+	clear: both;
+	height: 2.5em;
+	margin: 0;
+	width: 1000px;
+	/* The following rounds corners on box elements */
+	-webkit-border-top-left-radius: 1em; /* Safari 3-4 */
+	-webkit-border-top-right-radius: 1em; /* Safari 3-4 */
+	-moz-border-top-left-radius: 1em; /* Firefox 1+ */
+	-moz-border-top-right-radius: 1em; /* Firefox 1+ */
+	border-top-left-radius: 1em; /* Opera 10.5, IE 9, Safari 5, Chrome */
+	border-top-right-radius: 1em; /* Opera 10.5, IE 9, Safari 5, Chrome */
+	/* The following adds a shadow to box elements. */
+	-webkit-box-shadow: .2ex 0ex .4ex black; /* Safari 3-4 */
+	-moz-box-shadow: .2ex 0ex .4ex black; /* Firefox 1+ */
+	box-shadow: .2ex 0ex .4ex black; /* Opera 10.5, IE 9, Safari 5, Chrome */
+}
+
+small {
+	color: #99919E;
+	font-size: 1.75ex;
+	padding: .75em;
+	text-align: right;
+}
